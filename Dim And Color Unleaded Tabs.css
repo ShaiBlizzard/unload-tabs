@@ -1,0 +1,25 @@
+/**
+ * @name Dim Unloaded Tabs
+ * @author Niklas Gollenstede
+ * @licence CC-BY-SA-4.0 or MIT or MPL 2.0
+ * @description
+ *     This style dims not loaded tabs in Firefox.
+ *     It is complementary to the UnloadTabs WebExtension and can either:
+ *     * be manually added to the `chrome/user.chrome.css` file in Firefox's profile directory
+ *     * or installed with the reStyle Firefox extension (and NativeExt). 
+ *
+ *     
+ *     Note: just changed tab and text color to make closed tabs more noticeable, thought it would be useful to some| edit to your heart's contempt
+ */
+
+@-moz-document
+    url(chrome://browser/content/browser.xhtml),
+    url(chrome://browser/content/browser.xul)
+{
+    tab[pending], #alltabs-popup menuitem[pending]
+    {
+        background-color: white;
+        color: red;
+        opacity: 0.6 !important;
+    }
+}
