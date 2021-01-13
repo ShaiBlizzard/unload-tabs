@@ -18,8 +18,7 @@
 {
     tab[pending], #alltabs-popup menuitem[pending]
     {
-        background-color: white;
         color: red;
-        opacity: 0.6 !important;
+        opacity: 0.5 !important;
     }
 }
